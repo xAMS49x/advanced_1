@@ -1,11 +1,11 @@
 using Contact;
 using static Library.Library;
 
-namespace MessageHelper
+namespace ContactService
 {
-    public class MessageHelper
+    public class ContactService
     {
-        static ContactService service = new ContactService();
+        static Contact.ContactService service = new Contact.ContactService();
 
         public static void HandleAddContact()
         {

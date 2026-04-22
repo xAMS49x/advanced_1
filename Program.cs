@@ -1,5 +1,5 @@
 using static Library.Library;
-using static MessageHelper.MessageHelper;
+using static ContactService.ContactService;
 
 namespace Contact;
 
