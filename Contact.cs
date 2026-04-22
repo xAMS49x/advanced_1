@@ -2,7 +2,7 @@ namespace Contact
 {
     public class Contact
     {
-        private int _id = 0;
+        private int _id;
         private static int _autoInc = 1;
         private string _name = "";
         private string _phoneNumber = "";
@@ -10,11 +10,11 @@ namespace Contact
 
         public Contact(string name, string phoneNumber, string address = "")
         {
-            this._id = _autoInc++;
+            _id = _autoInc++;
 
-            this._name = name;
-            this._phoneNumber = phoneNumber;
-            this._address = address;
+            _name = name;
+            _phoneNumber = phoneNumber;
+            _address = address;
         }
 
         public int GetId() { return _id; }
@@ -24,7 +24,7 @@ namespace Contact
         {
             if (name.Trim().Length != 0)
             {
-                this._name = name;
+                _name = name;
             }
         }
 
@@ -33,7 +33,7 @@ namespace Contact
         {
             if (phoneNumber.Trim().Length != 0)
             {
-                this._phoneNumber = phoneNumber;
+                _phoneNumber = phoneNumber;
             }
         }
 
@@ -42,7 +42,7 @@ namespace Contact
         {
             if (address.Trim().Length != 0)
             {
-                this._address = address;
+                _address = address;
             }
         }
 

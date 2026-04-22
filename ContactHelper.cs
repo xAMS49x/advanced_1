@@ -2,7 +2,7 @@ namespace Contact
 {
     public class ContactService
     {
-        private List<Contact> _contacts = new List<Contact>();
+        private List<Contact> _contacts = new();
 
         public bool AddContact(string name, string phoneNumber, string address = "")
         {
